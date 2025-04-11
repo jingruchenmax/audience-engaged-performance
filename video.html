@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    #videoContainer {
+      margin: 2rem auto;
+    }
+    video {
+      width: 80%;
+      max-width: 100%;
+    }
+    #bottomStats {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #111;
+  border-top: 1px solid #444;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  z-index: 999;
+}
+
+.count-box {
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+  </style>
+  <script type="module" crossorigin src="/audience-engaged-performance/assets/video-B04hpNd7.js"></script>
+  <link rel="modulepreload" crossorigin href="/audience-engaged-performance/assets/index.esm2017-CJ5YLr7D.js">
+</head>
+<body>
+  <div id="alert" style="color:yellow; margin-bottom: 1rem;"></div>
+
+  <h3>Global Control</h3>
+  <button id="playBtn">▶️ Restart Music + Video</button>
+  <button id="loopBtn">🔁 Toggle Loop</button>
+  <div id="loopState" style="margin-top: 0.5rem; color: lightgreen;"></div>
+  <div id="videoContainer">
+    <video id="syncedVideo" controls>
+      <source src="media/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div id="dashboard"></div>
+  <div id="bottomStats"></div>
+
+</body>
+</html>
