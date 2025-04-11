@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Instrument App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="home" class="page active">
+    <h1>Select a Group</h1>
+    <button class="group-button" data-group="dnb">Drum & Bass</button>
+    <button class="group-button" data-group="bells">Bells & Guitars</button>
+    <button class="group-button" data-group="brass">Brass & Winds</button>
+    <button class="group-button" data-group="piano">Piano & Strings</button>
+  </div>
+
+  <div id="group-page" class="page">
+    <h2 id="group-title"></h2>
+    <button id="main-button">Hold to Play</button>
+  </div>
+
+  <script type="module" src="client/script.js"></script>
+</body>
+</html>

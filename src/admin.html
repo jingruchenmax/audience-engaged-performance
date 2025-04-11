@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+      padding: 2rem;
+    }
+
+    h1 {
+      margin-bottom: 2rem;
+    }
+
+    .instrument-group {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border: 1px solid #444;
+      border-radius: 8px;
+      background-color: #222;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .icon-label {
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .data {
+      font-size: 1rem;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+    <h2>Global Timestamp: <span id="timestampDisplay">loading...</span></h2>
+    <div id="alert" style="color:yellow; margin-bottom: 1rem;"></div>
+    
+    <h3>Global Control</h3>
+    <button id="playBtn">▶️ Restart Music</button>
+    <button id="loopBtn">🔁 Toggle Loop</button>
+    <div id="loopState" style="margin-top: 0.5rem; color: lightgreen;"></div>
+    
+    <h3>Live Stats</h3>
+    <div id="dashboard"></div>
+    
+  <script type="module" src="./admin/admin.js"></script>
+</body>
+</html>
