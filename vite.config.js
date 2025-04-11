@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite';
+import { resolve } from 'path'; // ✅ FIXED: import resolve for file paths
 
 export default defineConfig({
-  base:'/audience-engaged-performance/',
-  root: 'src',                   // Your source folder with main entry point
-  publicDir: '../public',        // Static assets like /audio and /media
+  base: '/audience-engaged-performance/',
+  root: 'src',
+  publicDir: '../public',
   build: {
     outDir: '../dist',
     emptyOutDir: true,
@@ -13,8 +14,9 @@ export default defineConfig({
         admin: resolve(__dirname, 'src/admin.html'),
         video: resolve(__dirname, 'src/video.html')
       }
-    }},
+    }
+  },
   server: {
-    host: true                   // Allow local network testing (mobile, etc.)
+    host: true
   }
 });

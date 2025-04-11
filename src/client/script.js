@@ -26,10 +26,10 @@ const db = getDatabase(app);
 
 // 🔊 Audio Map
 const groupToAudio = {
-  dnb: new Audio('/audio/Rhyth.wav'),
-  bells: new Audio('/audio/Wind.wav'),
-  brass: new Audio('/audio/Brass.wav'),
-  piano: new Audio('/audio/Strings.wav')
+  dnb: new Audio('audio/Rhyth.wav'),
+  bells: new Audio('audio/Wind.wav'),
+  brass: new Audio('audio/Brass.wav'),
+  piano: new Audio('audio/Strings.wav')
 };
 
 Object.values(groupToAudio).forEach(audio => {
